@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - The Foodie Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">The Foodie Hub</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="cart.html" class="active">Cart <span id="cartCount">0</span></a></li>
+        <li id="profileSection" class="hidden"><span id="usernameDisplay"></span></li>
+        <li id="loginBtn"><a href="login.html">Login</a></li>
+        <li id="logoutBtn" class="hidden"><button>Logout</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="cart-section">
+    <h2>Your Cart</h2>
+    <div id="cartContainer"></div>
+    <button class="btn checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+    <a href="history.html" class="btn order-history-btn">View Order History</a>
+  </section>
+
+  <footer>
+    <p>© 2025 The Foodie Hub. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

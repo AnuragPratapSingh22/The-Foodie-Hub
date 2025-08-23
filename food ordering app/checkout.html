@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - The Foodie Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">The Foodie Hub</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="cart.html">Cart <span id="cartCount">0</span></a></li>
+        <li id="profileSection" class="hidden"><span id="usernameDisplay"></span></li>
+        <li id="loginBtn"><a href="login.html">Login</a></li>
+        <li id="logoutBtn" class="hidden"><button>Logout</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="checkout-section">
+    <h2>Checkout Details</h2>
+    <div id="checkoutItems" class="checkout-items"></div>
+    <form id="checkoutForm" class="checkout-form">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" placeholder="Enter your full name" required>
+
+      <label for="phoneNumber">Phone Number</label>
+      <input type="tel" id="phoneNumber" placeholder="Enter your phone number" required>
+
+      <label for="address">Address</label>
+      <textarea id="address" placeholder="Enter your address" rows="3" required></textarea>
+
+      <label for="pincode">Pincode</label>
+      <input type="text" id="pincode" placeholder="Enter your pincode" required>
+
+      <label for="paymentMode">Payment Mode</label>
+      <select id="paymentMode" required>
+        <option value="">Select Payment Mode</option>
+        <option value="cash">Cash on Delivery</option>
+        <option value="card">Card Payment</option>
+        <option value="upi">UPI</option>
+      </select>
+
+      <label for="coupon">Coupon Code (Optional)</label>
+      <input type="text" id="coupon" placeholder="Enter coupon code">
+
+      <button type="submit" class="btn">Place Order</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 The Foodie Hub. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

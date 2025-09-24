@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - The Foodie Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">The Foodie Hub</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="cart.html">Cart <span id="cartCount">0</span></a></li>
+        <li id="profileSection" class="hidden"><span id="usernameDisplay"></span></li>
+        <li id="loginBtn"><a href="login.html">Login</a></li>
+        <li id="logoutBtn" class="hidden"><button>Logout</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="menu-section">
+    <h2>Our Special Menu</h2>
+
+    <div class="category-button" onclick="toggleCategory('starters', this)">Starters <span class="arrow">▼</span></div>
+    <div id="starters" class="category-content"></div>
+
+    <div class="category-button" onclick="toggleCategory('mainCourse', this)">Main Course <span class="arrow">▼</span></div>
+    <div id="mainCourse" class="category-content"></div>
+
+    <div class="category-button" onclick="toggleCategory('beverages', this)">Beverages <span class="arrow">▼</span></div>
+    <div id="beverages" class="category-content"></div>
+
+    <div class="category-button" onclick="toggleCategory('desserts', this)">Desserts <span class="arrow">▼</span></div>
+    <div id="desserts" class="category-content"></div>
+
+  </section>
+
+  <footer>
+    <p>© 2025 The Foodie Hub. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
